@@ -1,0 +1,86 @@
+@import "reset.css";
+
+.cards{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 4rem;
+}
+
+.titulo{
+	font-size: 40px;
+	font-family: "Arial",sans-serif;
+	color: white;
+	text-align: center;
+}
+
+.card{
+	padding: 25px;
+	height: 30%;
+	background-color: green;
+	width: 30%;
+	margin-top: 0.50%;
+}
+
+.card img{
+	width: 20vw;
+	height: 25vh;
+}
+
+.cardDescription{
+	font-size: 15px;
+	color: white;
+	font-family: "Arial",sans-serif;
+	text-align: center;
+	margin-top: 0.90%;
+}
+
+.episodios{
+	display:block;
+	margin:0 auto;
+	width: 100px;
+	height: 45px;
+	background-color: red;
+	color: white;
+}
+
+.personagens{
+	display:block;
+	margin:2% 45%;
+	width: 100px;
+	height: 45px;
+	background-color: red;
+	color: white;
+}
+
+@media screen and (max-width: 425px){
+	.cards{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.card{
+		width: 100%;
+	}
+
+	.card img{
+		width: 100%;
+		height: 10%;
+	}
+}
+
+@media screen and (max-width: 320px){
+	.card{
+		width: 100%;
+	}
+
+	.card img{
+		width: 100%;
+	}
+
+	.episodios{
+		width: 80px;
+	}
+}
